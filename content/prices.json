@@ -1,0 +1,24 @@
+{
+  "items": [
+    { "category": "Dog boarding", "item": "Overnight boarding, any size", "price": "$47/day", "note": "Plus a required activity for stays longer than one night", "owner_to_fill": false },
+    { "category": "Dog boarding", "item": "Activities (individual play, personal play, couch potato time, group play)", "price": "Ask us", "note": "Military, long-term and multi-pet discounts available", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Frozen treat or peanut butter Kong", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Treat puzzle", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Medication administration", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Nail trim or Dremel", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Ear cleaning", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Teeth brushing", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Bath, grooming or brush-out", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Noon feeding", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Seasonal photos", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Dog add-ons", "item": "Birthday party package", "price": "Ask us", "note": "Photos, ice cream treat and a take-home goody bag", "owner_to_fill": true },
+    { "category": "Cat boarding", "item": "Overnight boarding, any size", "price": "$28/day", "note": "Food included", "owner_to_fill": false },
+    { "category": "Doggie daycare", "item": "Full day", "price": "$27/day", "note": "", "owner_to_fill": false },
+    { "category": "Doggie daycare", "item": "Discount packages", "price": "From $24/day", "note": "Packages don't expire but are non-refundable", "owner_to_fill": false },
+    { "category": "Doggie daycare", "item": "Half day or a few hours", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Grooming", "item": "Bath package", "price": "Ask us", "note": "Includes bath, blow dry, nail trim, ear cleaning, bandana", "owner_to_fill": true },
+    { "category": "Grooming", "item": "Full grooming package with custom cut", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Grooming", "item": "Add-ons (nail painting, teeth brushing, brush-out)", "price": "Ask us", "note": "", "owner_to_fill": true },
+    { "category": "Small pets and exotics", "item": "Boarding (guinea pigs, rabbits, birds, ferrets, reptiles)", "price": "Ask us", "note": "Bring the enclosure and food", "owner_to_fill": true }
+  ]
+}

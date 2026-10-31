@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "title": "Book holiday stays early",
+      "body": "Thanksgiving, Christmas and New Year's fill up fast. Reserve your dates now and we'll confirm by text.",
+      "code": "",
+      "start_date": "2026-09-01",
+      "end_date": "2027-01-05",
+      "active": true
+    },
+    {
+      "title": "Welcome offer: 5% off your first overnight stay",
+      "body": "Five percent off your very first overnight boarding reservation. Add-on services are not included.",
+      "code": "FIRSTSTAY5",
+      "start_date": "2026-01-01",
+      "end_date": "2026-09-30",
+      "active": true
+    }
+  ]
+}

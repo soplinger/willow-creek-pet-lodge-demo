@@ -1,0 +1,60 @@
+{
+  "timezone": "America/New_York",
+  "desk": {
+    "label": "Front desk",
+    "days": [
+      { "day": "mon", "closed": false, "periods": [ { "open": "09:00", "close": "12:00" }, { "open": "16:00", "close": "18:00" } ], "owner_to_fill": false, "note": "" },
+      { "day": "tue", "closed": false, "periods": [ { "open": "09:00", "close": "12:00" }, { "open": "16:00", "close": "18:00" } ], "owner_to_fill": false, "note": "" },
+      { "day": "wed", "closed": false, "periods": [ { "open": "09:00", "close": "12:00" }, { "open": "16:00", "close": "18:00" } ], "owner_to_fill": false, "note": "" },
+      { "day": "thu", "closed": false, "periods": [ { "open": "09:00", "close": "12:00" }, { "open": "16:00", "close": "18:00" } ], "owner_to_fill": false, "note": "" },
+      { "day": "fri", "closed": false, "periods": [ { "open": "09:00", "close": "12:00" }, { "open": "16:00", "close": "18:00" } ], "owner_to_fill": false, "note": "" },
+      { "day": "sat", "closed": false, "periods": [ { "open": "09:00", "close": "16:00" } ], "owner_to_fill": false, "note": "" },
+      { "day": "sun", "closed": false, "periods": [ { "open": "10:00", "close": "11:00" }, { "open": "17:00", "close": "18:00" } ], "owner_to_fill": false, "note": "" }
+    ]
+  },
+  "tours": {
+    "label": "Tours and meet & greets",
+    "days": [
+      { "day": "mon", "closed": false, "periods": [ { "open": "10:00", "close": "11:30" }, { "open": "16:00", "close": "17:30" } ], "owner_to_fill": false, "note": "Call ahead to book" },
+      { "day": "tue", "closed": false, "periods": [ { "open": "10:00", "close": "11:30" }, { "open": "16:00", "close": "17:30" } ], "owner_to_fill": false, "note": "Call ahead to book" },
+      { "day": "wed", "closed": false, "periods": [ { "open": "10:00", "close": "11:30" }, { "open": "16:00", "close": "17:30" } ], "owner_to_fill": false, "note": "Call ahead to book" },
+      { "day": "thu", "closed": false, "periods": [ { "open": "10:00", "close": "11:30" }, { "open": "16:00", "close": "17:30" } ], "owner_to_fill": false, "note": "Call ahead to book" },
+      { "day": "fri", "closed": true, "periods": [], "owner_to_fill": false, "note": "" },
+      { "day": "sat", "closed": false, "periods": [ { "open": "10:00", "close": "12:00" } ], "owner_to_fill": true, "note": "Weekend tours: owner to confirm" },
+      { "day": "sun", "closed": true, "periods": [], "owner_to_fill": false, "note": "" }
+    ]
+  },
+  "daycare": {
+    "label": "Doggie daycare drop-off",
+    "days": [
+      { "day": "mon", "closed": false, "periods": [ { "open": "07:30", "close": "Ask us" } ], "owner_to_fill": true, "note": "Drop-off from 7:30 AM" },
+      { "day": "tue", "closed": false, "periods": [ { "open": "07:30", "close": "Ask us" } ], "owner_to_fill": true, "note": "Drop-off from 7:30 AM" },
+      { "day": "wed", "closed": false, "periods": [ { "open": "07:30", "close": "Ask us" } ], "owner_to_fill": true, "note": "Drop-off from 7:30 AM" },
+      { "day": "thu", "closed": false, "periods": [ { "open": "07:30", "close": "Ask us" } ], "owner_to_fill": true, "note": "Drop-off from 7:30 AM" },
+      { "day": "fri", "closed": false, "periods": [ { "open": "07:30", "close": "Ask us" } ], "owner_to_fill": true, "note": "Drop-off from 7:30 AM" },
+      { "day": "sat", "closed": false, "periods": [ { "open": "07:30", "close": "Ask us" } ], "owner_to_fill": true, "note": "Drop-off from 7:30 AM" },
+      { "day": "sun", "closed": false, "periods": [ { "open": "07:30", "close": "Ask us" } ], "owner_to_fill": true, "note": "Drop-off from 7:30 AM" }
+    ]
+  },
+  "grooming": {
+    "label": "Grooming appointments",
+    "days": [
+      { "day": "mon", "closed": false, "periods": [ { "open": "Ask us", "close": "Ask us" } ], "owner_to_fill": true, "note": "" },
+      { "day": "tue", "closed": false, "periods": [ { "open": "Ask us", "close": "Ask us" } ], "owner_to_fill": true, "note": "" },
+      { "day": "wed", "closed": false, "periods": [ { "open": "Ask us", "close": "Ask us" } ], "owner_to_fill": true, "note": "" },
+      { "day": "thu", "closed": false, "periods": [ { "open": "Ask us", "close": "Ask us" } ], "owner_to_fill": true, "note": "" },
+      { "day": "fri", "closed": false, "periods": [ { "open": "Ask us", "close": "Ask us" } ], "owner_to_fill": true, "note": "" },
+      { "day": "sat", "closed": false, "periods": [ { "open": "Ask us", "close": "Ask us" } ], "owner_to_fill": true, "note": "" },
+      { "day": "sun", "closed": false, "periods": [ { "open": "Ask us", "close": "Ask us" } ], "owner_to_fill": true, "note": "" }
+    ]
+  },
+  "holidays": [
+    { "date": "2026-11-26", "label": "Thanksgiving", "closed": true, "open": "", "close": "", "note": "Closed all day" },
+    { "date": "2026-12-25", "label": "Christmas Day", "closed": true, "open": "", "close": "", "note": "Closed all day" },
+    { "date": "2027-01-01", "label": "New Year's Day", "closed": false, "open": "16:00", "close": "18:00", "note": "Front desk only" },
+    { "date": "2027-03-28", "label": "Easter", "closed": false, "open": "16:00", "close": "18:00", "note": "Front desk only" },
+    { "date": "2027-05-31", "label": "Memorial Day", "closed": false, "open": "16:00", "close": "18:00", "note": "Front desk only" },
+    { "date": "2027-07-04", "label": "Independence Day", "closed": false, "open": "Ask us", "close": "Ask us", "note": "Owner to confirm 2027 hours" },
+    { "date": "2027-09-06", "label": "Labor Day", "closed": false, "open": "16:00", "close": "18:00", "note": "Front desk only" }
+  ]
+}

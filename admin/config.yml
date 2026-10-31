@@ -1,0 +1,247 @@
+backend:
+  name: github
+  repo: soplinger/willow-creek-pet-lodge-demo
+  branch: main
+  base_url: https://YOUR-OAUTH-PROXY.workers.dev # Cloudflare Worker OAuth proxy, see README
+  auth_endpoint: auth
+
+local_backend: true
+
+media_folder: images/uploads
+public_folder: images/uploads
+
+collections:
+  - name: hours
+    label: Hours and holidays
+    files:
+      - name: hours
+        label: Hours and holiday closures
+        file: content/hours.json
+        format: json
+        fields:
+          - { label: Timezone, name: timezone, widget: string, default: America/New_York }
+          - label: Front desk
+            name: desk
+            widget: object
+            fields:
+              - { label: Label, name: label, widget: string }
+              - label: Days
+                name: days
+                widget: list
+                summary: "{{fields.day}} {{fields.periods}}"
+                fields:
+                  - label: Day
+                    name: day
+                    widget: select
+                    options:
+                      - { label: Monday, value: mon }
+                      - { label: Tuesday, value: tue }
+                      - { label: Wednesday, value: wed }
+                      - { label: Thursday, value: thu }
+                      - { label: Friday, value: fri }
+                      - { label: Saturday, value: sat }
+                      - { label: Sunday, value: sun }
+                  - { label: Closed, name: closed, widget: boolean, default: false }
+                  - label: Open periods (24-hour HH:MM, or "Ask us")
+                    name: periods
+                    widget: list
+                    fields:
+                      - { label: Open, name: open, widget: string }
+                      - { label: Close, name: close, widget: string }
+                  - { label: Owner to fill, name: owner_to_fill, widget: boolean, default: false }
+                  - { label: Note, name: note, widget: string, required: false }
+          - label: Tours and meet and greets
+            name: tours
+            widget: object
+            fields:
+              - { label: Label, name: label, widget: string }
+              - label: Days
+                name: days
+                widget: list
+                fields:
+                  - label: Day
+                    name: day
+                    widget: select
+                    options:
+                      - { label: Monday, value: mon }
+                      - { label: Tuesday, value: tue }
+                      - { label: Wednesday, value: wed }
+                      - { label: Thursday, value: thu }
+                      - { label: Friday, value: fri }
+                      - { label: Saturday, value: sat }
+                      - { label: Sunday, value: sun }
+                  - { label: Closed, name: closed, widget: boolean, default: false }
+                  - label: Open periods
+                    name: periods
+                    widget: list
+                    fields:
+                      - { label: Open, name: open, widget: string }
+                      - { label: Close, name: close, widget: string }
+                  - { label: Owner to fill, name: owner_to_fill, widget: boolean, default: false }
+                  - { label: Note, name: note, widget: string, required: false }
+          - label: Doggie daycare
+            name: daycare
+            widget: object
+            fields:
+              - { label: Label, name: label, widget: string }
+              - label: Days
+                name: days
+                widget: list
+                fields:
+                  - label: Day
+                    name: day
+                    widget: select
+                    options:
+                      - { label: Monday, value: mon }
+                      - { label: Tuesday, value: tue }
+                      - { label: Wednesday, value: wed }
+                      - { label: Thursday, value: thu }
+                      - { label: Friday, value: fri }
+                      - { label: Saturday, value: sat }
+                      - { label: Sunday, value: sun }
+                  - { label: Closed, name: closed, widget: boolean, default: false }
+                  - label: Open periods
+                    name: periods
+                    widget: list
+                    fields:
+                      - { label: Open, name: open, widget: string }
+                      - { label: Close, name: close, widget: string }
+                  - { label: Owner to fill, name: owner_to_fill, widget: boolean, default: false }
+                  - { label: Note, name: note, widget: string, required: false }
+          - label: Grooming
+            name: grooming
+            widget: object
+            fields:
+              - { label: Label, name: label, widget: string }
+              - label: Days
+                name: days
+                widget: list
+                fields:
+                  - label: Day
+                    name: day
+                    widget: select
+                    options:
+                      - { label: Monday, value: mon }
+                      - { label: Tuesday, value: tue }
+                      - { label: Wednesday, value: wed }
+                      - { label: Thursday, value: thu }
+                      - { label: Friday, value: fri }
+                      - { label: Saturday, value: sat }
+                      - { label: Sunday, value: sun }
+                  - { label: Closed, name: closed, widget: boolean, default: false }
+                  - label: Open periods
+                    name: periods
+                    widget: list
+                    fields:
+                      - { label: Open, name: open, widget: string }
+                      - { label: Close, name: close, widget: string }
+                  - { label: Owner to fill, name: owner_to_fill, widget: boolean, default: false }
+                  - { label: Note, name: note, widget: string, required: false }
+          - label: Holiday closures
+            name: holidays
+            widget: list
+            summary: "{{fields.date}} {{fields.label}}"
+            fields:
+              - { label: Date, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: Label, name: label, widget: string }
+              - { label: Closed all day, name: closed, widget: boolean, default: false }
+              - { label: Open (HH:MM, 24-hour), name: open, widget: string, required: false }
+              - { label: Close (HH:MM, 24-hour), name: close, widget: string, required: false }
+              - { label: Note, name: note, widget: string, required: false }
+
+  - name: announcements
+    label: Announcements and coupons
+    files:
+      - name: announcements
+        label: Announcements and coupons
+        file: content/announcements.json
+        format: json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            hint: Expired items hide automatically after their end date, so you don't need to delete them. Turn off active to hide an item right away.
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Body, name: body, widget: text }
+              - { label: Code (optional), name: code, widget: string, required: false }
+              - { label: Start date, name: start_date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: End date (inclusive), name: end_date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: Active, name: active, widget: boolean, default: true }
+
+  - name: prices
+    label: Prices
+    files:
+      - name: prices
+        label: Prices
+        file: content/prices.json
+        format: json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            summary: "{{fields.category}}: {{fields.item}} {{fields.price}}"
+            fields:
+              - { label: Category, name: category, widget: string }
+              - { label: Item, name: item, widget: string }
+              - { label: Price, name: price, widget: string, hint: "Use a price like $47/day, or the text Ask us" }
+              - { label: Note, name: note, widget: string, required: false }
+              - { label: Owner to fill, name: owner_to_fill, widget: boolean, default: false }
+
+  - name: services
+    label: Services
+    files:
+      - name: services
+        label: Services
+        file: content/services.json
+        format: json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Slug (must match the page name, e.g. dog-boarding), name: slug, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Summary, name: summary, widget: text }
+              - { label: "Starting price (shown as 'from $X', or write Ask us)", name: price, widget: string, required: false }
+              - { label: Image, name: image, widget: image }
+              - { label: Alt text, name: alt, widget: string }
+
+  - name: faqs
+    label: FAQs
+    files:
+      - name: faqs
+        label: FAQs
+        file: content/faqs.json
+        format: json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            summary: "{{fields.question}}"
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+              - label: Category
+                name: category
+                widget: select
+                options: [Vaccines, Boarding, Daycare, Grooming, General]
+
+  - name: gallery
+    label: Gallery
+    files:
+      - name: gallery
+        label: Gallery
+        file: content/gallery.json
+        format: json
+        fields:
+          - label: Photos
+            name: items
+            widget: list
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Alt text, name: alt, widget: string }
+              - { label: Caption, name: caption, widget: string }

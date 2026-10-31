@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "question": "When do my pet's vaccine records need to reach you?",
+      "answer": "At least 48 hours before your reservation. You can upload them on the online intake form, or send them to the front desk.",
+      "category": "Vaccines"
+    },
+    {
+      "question": "How far ahead do vaccines need to be given?",
+      "answer": "Flu and distemper must be given at least 3 days before services. Bordetella must be given at least 7 days before. We strongly recommend 2 weeks for all vaccines.",
+      "category": "Vaccines"
+    },
+    {
+      "question": "Which vaccines are accepted?",
+      "answer": "We can only accept vaccines given by a veterinary office or clinic. Dogs need rabies, bordetella, distemper and canine influenza. Cats need rabies and FVRCP.",
+      "category": "Vaccines"
+    },
+    {
+      "question": "What happens if records are late or missing?",
+      "answer": "If we don't receive complete vaccine records within the required window, we have to cancel the reservation. Call us if you have questions about your pet's timing.",
+      "category": "Vaccines"
+    },
+    {
+      "question": "Do dogs need a dog license?",
+      "answer": "Many areas require one, so please check your local rules and keep your dog's license current. Bring a copy if you have it. It doesn't replace vaccine records.",
+      "category": "Vaccines"
+    },
+    {
+      "question": "Is the agreement a paper form?",
+      "answer": "No. You sign the agreement once through the online intake form. You won't need to print or mail anything.",
+      "category": "Vaccines"
+    },
+    {
+      "question": "Do I need to bring food, toys or bedding?",
+      "answer": "Food is included, though bringing food from home avoids a sudden diet change. Bring a familiar-smelling blanket or t-shirt and medicine in its original bottle. We can't accept rope toys, rawhide or bully sticks.",
+      "category": "Boarding"
+    }
+  ]
+}

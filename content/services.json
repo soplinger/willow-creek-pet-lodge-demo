@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "slug": "dog-boarding",
+      "name": "Dog boarding",
+      "summary": "A private indoor suite with a covered outdoor run, daily activities and food included.",
+      "image": "images/hero-dogs-1200.webp",
+      "alt": "Two dogs playing on a grassy yard in front of a red barn",
+      "price": "$47/day"
+    },
+    {
+      "slug": "cat-boarding",
+      "name": "Cat boarding",
+      "summary": "A quiet cattery kept separate from the dogs, with condos, window perches and daily play.",
+      "image": "images/cat-suite-1200.webp",
+      "alt": "A tabby cat resting on a soft cream blanket in a calm room",
+      "price": "$28/day"
+    },
+    {
+      "slug": "daycare",
+      "name": "Doggie daycare",
+      "summary": "Play groups matched by size and play style, with three play yards and a flexible schedule.",
+      "image": "images/daycare-1200.webp",
+      "alt": "A group of dogs playing with a blue ball in a bright indoor play room",
+      "price": "$27/day"
+    },
+    {
+      "slug": "grooming",
+      "name": "Grooming",
+      "summary": "Baths, brush-outs, nail care and custom cuts from a patient, experienced groomer.",
+      "image": "images/grooming-1200.webp",
+      "alt": "A groomer brushing a small fluffy dog on a grooming table",
+      "price": "Ask us"
+    },
+    {
+      "slug": "small-pets",
+      "name": "Small pets and exotics",
+      "summary": "A separate space for rabbits, guinea pigs, birds, ferrets and reptiles.",
+      "image": "images/small-pets-1200.webp",
+      "alt": "A lop-eared rabbit and a guinea pig sitting on bedding next to a wooden hide",
+      "price": "Ask us"
+    }
+  ]
+}

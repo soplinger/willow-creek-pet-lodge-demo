@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "image": "images/hero-dogs-1200.webp",
+      "alt": "Two dogs running across a fenced grass yard, with a red barn behind them",
+      "caption": "Outdoor play on the grass yard"
+    },
+    {
+      "image": "images/cat-suite-1200.webp",
+      "alt": "A tabby cat stretched out on a soft cream blanket beside a potted plant",
+      "caption": "A quiet cattery suite"
+    },
+    {
+      "image": "images/daycare-1200.webp",
+      "alt": "Several dogs chasing a blue ball across an indoor play room with tall windows",
+      "caption": "Group play in the indoor play room"
+    },
+    {
+      "image": "images/grooming-1200.webp",
+      "alt": "A groomer brushing a fluffy tan dog on a black table",
+      "caption": "Brush-out at grooming"
+    },
+    {
+      "image": "images/small-pets-1200.webp",
+      "alt": "A rabbit and a guinea pig on bedding in a clean small-pet suite",
+      "caption": "Small pets suite"
+    }
+  ]
+}
